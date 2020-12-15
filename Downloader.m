@@ -133,6 +133,8 @@
 
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
 {
+  _params.errorCallback(error);
+/*
   if (error && error.code != NSURLErrorCancelled) {
       _resumeData = error.userInfo[NSURLSessionDownloadTaskResumeData];
       if (_resumeData != nil) {
@@ -143,6 +145,7 @@
           _params.errorCallback(error);
       }
   }
+*/
 }
 
 - (void)stopDownload
