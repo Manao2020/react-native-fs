@@ -7,8 +7,8 @@
 //
 
 #import "FBCrash.h"
-#import <Firebase.h>
-#import <FirebaseCrashlytics.h>
+// #import <Firebase.h>
+// #import <FirebaseCrashlytics.h>
 
 @implementation FBCrash
 
@@ -23,7 +23,7 @@ RCT_EXPORT_MODULE();
 */
 
 RCT_EXPORT_METHOD(getDeviceName:(RCTResponseSenderBlock)callback){
-  
+  /*
   if ( [[FIRCrashlytics crashlytics] isCrashlyticsCollectionEnabled] == true ){
     NSLog(@"true : FIRCrashlytics");
     assert(NO);
@@ -38,6 +38,7 @@ RCT_EXPORT_METHOD(getDeviceName:(RCTResponseSenderBlock)callback){
  @catch(NSException *exception){
    callback(@[exception.reason, @"ok"]);
  }
+ */
 }
 
 
